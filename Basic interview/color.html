@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function handleClick(clr,bgd){
+            document.getElementById("data").style.background = clr
+            document.getElementById("data2").style.color = bgd
+        }
+    </script>
+    <title>Document</title>
+</head>
+<style>
+    .Main-content{
+        margin-left: 500px;
+        width: 700px;
+        text-align: center;
+        background-color: yellow;
+        border: 2px solid red; 
+         height: 400px ;
+    }
+    .main-button button{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(243, 169, 126);
+        color: red;
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <div class="Main-content"    id="data">
+    
+      
+       <h1 id="data2">Change ColorS</h1>
+    </div>
+    <div class="main-button">
+        <button onclick="handleClick('red','white')">Change</button>
+        <button onclick="handleClick('skyblue','blue')">skyblue</button>
+        <button onclick="handleClick('green','lightgreen')">Green</button>
+        <button onclick="handleClick('brown','yellow')">Brown</button>
+        <button onclick="handleClick('lightgreen','green')">lightGreen</button>
+        <button onclick="handleClick('orange','white')">Orange</button>
+    </div>
+</body>
+</html>

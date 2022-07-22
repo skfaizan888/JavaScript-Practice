@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getFullname(){
+            var firstname=document.getElementById("firstname").value
+            var middlename=document.getElementById("middlename").value
+            var Lasttname=document.getElementById("lastname").value
+            document.getElementById("fullname").value=firstname + " , " + middlename + " , " + Lasttname ;
+        }
+        function getClear(){
+            var firstname=document.getElementById("firstname").value=""
+            var middlename=document.getElementById("middlename").value=""
+            var Lasttname=document.getElementById("lastname").value=""
+            var fullname=document.getElementById("fullname").value=""
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>FirstName:</label>
+        <input type="text" id="firstname">
+        <br>
+        <br>
+        <label>MiddleName:</label>
+        <input type="text" id="middlename">
+        <br>
+        <br>
+        <label >LastName:</label>
+        <input type="text" id="lastname">
+        <br>
+        <br>
+        <button onclick="getFullname()" > Get Details </button>
+        <button onclick="getClear()" > Get Clear </button>
+        <br>
+        <br>
+        <label >FullName:</label>
+        <input type="text" id="fullname">
+    </div>
+</body>
+</html>

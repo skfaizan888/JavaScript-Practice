@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function getFullname(){
+             var Name=document.getElementById("firstname").value
+             var Middle=document.getElementById("middlename").value
+             var Last=document.getElementById("lastname").value
+             document.getElementById("fullname").value=Name+","+Middle+","+Last
+           
+        }
+       
+    </script>
+</head>
+<body>
+   <div>
+      
+       
+       <table>
+           <tr>
+               <td>
+                <lable>firstname</lable>
+                <input id="firstname" type="text">
+               </td>
+           </tr>
+           <tr>
+               <td>
+                <lable>middlename</lable>
+                <input id="middlename" type="text">
+               </td>
+           </tr>
+           <tr>
+               <td>
+                <lable>lastname</lable>
+                <input id="lastname" type="text">
+               </td>
+           </tr>
+           <tr>
+               <td>
+                <button onclick="getFullname()">send</button>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                <lable>Full name</lable>
+                <input id="fullname" type="text">
+               </td>
+           </tr>
+       </table>
+   </div>
+</body>
+</html>
